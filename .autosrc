@@ -1,0 +1,12 @@
+
+
+# Called when you first enter the directory (or its children)
+autosrc_enter() {
+	use_conda
+	conda activate 3.9.16
+}
+
+# Called when you exit the directory
+autosrc_exit() {
+	conda deactivate
+}
